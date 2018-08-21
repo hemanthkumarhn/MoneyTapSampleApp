@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D1B02D5E21296FA70028E764 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B02D5D21296FA70028E764 /* AppDelegate.swift */; };
+		D1B02D6021296FA70028E764 /* WikipediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B02D5F21296FA70028E764 /* WikipediaViewController.swift */; };
+		D1B02D6321296FA70028E764 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1B02D6121296FA70028E764 /* Main.storyboard */; };
+		D1B02D6521296FA90028E764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1B02D6421296FA90028E764 /* Assets.xcassets */; };
+		D1B02D6821296FA90028E764 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1B02D6621296FA90028E764 /* LaunchScreen.storyboard */; };
+		D1B02D7321296FA90028E764 /* MoneyTapSampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B02D7221296FA90028E764 /* MoneyTapSampleAppTests.swift */; };
+		D1B02D832129734D0028E764 /* WikipediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B02D822129734D0028E764 /* WikipediaView.swift */; };
+		D1B02D85212973640028E764 /* WikipediaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B02D84212973640028E764 /* WikipediaModel.swift */; };
+		D1B02D872129744E0028E764 /* WikipediaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B02D862129744E0028E764 /* WikipediaCell.swift */; };
+		D1B02D8921297F980028E764 /* WikipediaCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1B02D8821297F970028E764 /* WikipediaCell.xib */; };
+		D1B02D8B21298E7E0028E764 /* BaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B02D8A21298E7E0028E764 /* BaseController.swift */; };
+		D1B02D8D2129AB620028E764 /* RestConnetor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B02D8C2129AB620028E764 /* RestConnetor.swift */; };
+		D1B02D8F2129AEC90028E764 /* WebServices.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1B02D8E2129AEC90028E764 /* WebServices.plist */; };
+		D1B02D912129BCC70028E764 /* RestInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B02D902129BCC70028E764 /* RestInterface.swift */; };
+		D1B02D93212A02AC0028E764 /* utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B02D92212A02AC0028E764 /* utility.swift */; };
+		D1B02D95212B3D6F0028E764 /* searchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B02D94212B3D6E0028E764 /* searchModel.swift */; };
+		D1B02D98212B41FC0028E764 /* dataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B02D97212B41FC0028E764 /* dataParser.swift */; };
+		D1B02D9A212C99130028E764 /* RestInterfaceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B02D99212C99130028E764 /* RestInterfaceTest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D1B02D6F21296FA90028E764 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1B02D5221296FA60028E764 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1B02D5921296FA70028E764;
+			remoteInfo = MoneyTapSampleApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D1B02D5A21296FA70028E764 /* MoneyTapSampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoneyTapSampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1B02D5D21296FA70028E764 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D1B02D5F21296FA70028E764 /* WikipediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaViewController.swift; sourceTree = "<group>"; };
+		D1B02D6221296FA70028E764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D1B02D6421296FA90028E764 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1B02D6721296FA90028E764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D1B02D6921296FA90028E764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1B02D6E21296FA90028E764 /* MoneyTapSampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyTapSampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1B02D7221296FA90028E764 /* MoneyTapSampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyTapSampleAppTests.swift; sourceTree = "<group>"; };
+		D1B02D7421296FA90028E764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1B02D822129734D0028E764 /* WikipediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaView.swift; sourceTree = "<group>"; };
+		D1B02D84212973640028E764 /* WikipediaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaModel.swift; sourceTree = "<group>"; };
+		D1B02D862129744E0028E764 /* WikipediaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikipediaCell.swift; sourceTree = "<group>"; };
+		D1B02D8821297F970028E764 /* WikipediaCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WikipediaCell.xib; sourceTree = "<group>"; };
+		D1B02D8A21298E7E0028E764 /* BaseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseController.swift; sourceTree = "<group>"; };
+		D1B02D8C2129AB620028E764 /* RestConnetor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestConnetor.swift; sourceTree = "<group>"; };
+		D1B02D8E2129AEC90028E764 /* WebServices.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = WebServices.plist; sourceTree = "<group>"; };
+		D1B02D902129BCC70028E764 /* RestInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestInterface.swift; sourceTree = "<group>"; };
+		D1B02D92212A02AC0028E764 /* utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utility.swift; sourceTree = "<group>"; };
+		D1B02D94212B3D6E0028E764 /* searchModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = searchModel.swift; sourceTree = "<group>"; };
+		D1B02D97212B41FC0028E764 /* dataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dataParser.swift; sourceTree = "<group>"; };
+		D1B02D99212C99130028E764 /* RestInterfaceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestInterfaceTest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1B02D5721296FA70028E764 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1B02D6B21296FA90028E764 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D1B02D5121296FA60028E764 = {
+			isa = PBXGroup;
+			children = (
+				D1B02D5C21296FA70028E764 /* MoneyTapSampleApp */,
+				D1B02D7121296FA90028E764 /* MoneyTapSampleAppTests */,
+				D1B02D5B21296FA70028E764 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D1B02D5B21296FA70028E764 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1B02D5A21296FA70028E764 /* MoneyTapSampleApp.app */,
+				D1B02D6E21296FA90028E764 /* MoneyTapSampleAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1B02D5C21296FA70028E764 /* MoneyTapSampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				D1B02D6421296FA90028E764 /* Assets.xcassets */,
+				D1B02D5D21296FA70028E764 /* AppDelegate.swift */,
+				D1B02D7F2129711E0028E764 /* Utility */,
+				D1B02D7E212971050028E764 /* ServiceInterface */,
+				D1B02D7D212970CB0028E764 /* Wikipedia */,
+				D1B02D6121296FA70028E764 /* Main.storyboard */,
+				D1B02D6621296FA90028E764 /* LaunchScreen.storyboard */,
+				D1B02D6921296FA90028E764 /* Info.plist */,
+				D1B02D8E2129AEC90028E764 /* WebServices.plist */,
+			);
+			path = MoneyTapSampleApp;
+			sourceTree = "<group>";
+		};
+		D1B02D7121296FA90028E764 /* MoneyTapSampleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				D1B02D7221296FA90028E764 /* MoneyTapSampleAppTests.swift */,
+				D1B02D7421296FA90028E764 /* Info.plist */,
+				D1B02D99212C99130028E764 /* RestInterfaceTest.swift */,
+			);
+			path = MoneyTapSampleAppTests;
+			sourceTree = "<group>";
+		};
+		D1B02D7D212970CB0028E764 /* Wikipedia */ = {
+			isa = PBXGroup;
+			children = (
+				D1B02D5F21296FA70028E764 /* WikipediaViewController.swift */,
+				D1B02D822129734D0028E764 /* WikipediaView.swift */,
+				D1B02D84212973640028E764 /* WikipediaModel.swift */,
+				D1B02D862129744E0028E764 /* WikipediaCell.swift */,
+				D1B02D8821297F970028E764 /* WikipediaCell.xib */,
+				D1B02D8A21298E7E0028E764 /* BaseController.swift */,
+			);
+			path = Wikipedia;
+			sourceTree = "<group>";
+		};
+		D1B02D7E212971050028E764 /* ServiceInterface */ = {
+			isa = PBXGroup;
+			children = (
+				D1B02D96212B41D80028E764 /* dataParser&Model */,
+				D1B02D8C2129AB620028E764 /* RestConnetor.swift */,
+				D1B02D902129BCC70028E764 /* RestInterface.swift */,
+			);
+			path = ServiceInterface;
+			sourceTree = "<group>";
+		};
+		D1B02D7F2129711E0028E764 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				D1B02D92212A02AC0028E764 /* utility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		D1B02D96212B41D80028E764 /* dataParser&Model */ = {
+			isa = PBXGroup;
+			children = (
+				D1B02D94212B3D6E0028E764 /* searchModel.swift */,
+				D1B02D97212B41FC0028E764 /* dataParser.swift */,
+			);
+			path = "dataParser&Model";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1B02D5921296FA70028E764 /* MoneyTapSampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1B02D7721296FA90028E764 /* Build configuration list for PBXNativeTarget "MoneyTapSampleApp" */;
+			buildPhases = (
+				D1B02D5621296FA70028E764 /* Sources */,
+				D1B02D5721296FA70028E764 /* Frameworks */,
+				D1B02D5821296FA70028E764 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoneyTapSampleApp;
+			productName = MoneyTapSampleApp;
+			productReference = D1B02D5A21296FA70028E764 /* MoneyTapSampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D1B02D6D21296FA90028E764 /* MoneyTapSampleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1B02D7A21296FA90028E764 /* Build configuration list for PBXNativeTarget "MoneyTapSampleAppTests" */;
+			buildPhases = (
+				D1B02D6A21296FA90028E764 /* Sources */,
+				D1B02D6B21296FA90028E764 /* Frameworks */,
+				D1B02D6C21296FA90028E764 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1B02D7021296FA90028E764 /* PBXTargetDependency */,
+			);
+			name = MoneyTapSampleAppTests;
+			productName = MoneyTapSampleAppTests;
+			productReference = D1B02D6E21296FA90028E764 /* MoneyTapSampleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1B02D5221296FA60028E764 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = MoneyTapSample;
+				TargetAttributes = {
+					D1B02D5921296FA70028E764 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					D1B02D6D21296FA90028E764 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = D1B02D5921296FA70028E764;
+					};
+				};
+			};
+			buildConfigurationList = D1B02D5521296FA60028E764 /* Build configuration list for PBXProject "MoneyTapSampleApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1B02D5121296FA60028E764;
+			productRefGroup = D1B02D5B21296FA70028E764 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1B02D5921296FA70028E764 /* MoneyTapSampleApp */,
+				D1B02D6D21296FA90028E764 /* MoneyTapSampleAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1B02D5821296FA70028E764 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1B02D6821296FA90028E764 /* LaunchScreen.storyboard in Resources */,
+				D1B02D8F2129AEC90028E764 /* WebServices.plist in Resources */,
+				D1B02D6521296FA90028E764 /* Assets.xcassets in Resources */,
+				D1B02D8921297F980028E764 /* WikipediaCell.xib in Resources */,
+				D1B02D6321296FA70028E764 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1B02D6C21296FA90028E764 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1B02D5621296FA70028E764 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1B02D6021296FA70028E764 /* WikipediaViewController.swift in Sources */,
+				D1B02D98212B41FC0028E764 /* dataParser.swift in Sources */,
+				D1B02D5E21296FA70028E764 /* AppDelegate.swift in Sources */,
+				D1B02D8D2129AB620028E764 /* RestConnetor.swift in Sources */,
+				D1B02D95212B3D6F0028E764 /* searchModel.swift in Sources */,
+				D1B02D872129744E0028E764 /* WikipediaCell.swift in Sources */,
+				D1B02D832129734D0028E764 /* WikipediaView.swift in Sources */,
+				D1B02D912129BCC70028E764 /* RestInterface.swift in Sources */,
+				D1B02D93212A02AC0028E764 /* utility.swift in Sources */,
+				D1B02D8B21298E7E0028E764 /* BaseController.swift in Sources */,
+				D1B02D85212973640028E764 /* WikipediaModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1B02D6A21296FA90028E764 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1B02D7321296FA90028E764 /* MoneyTapSampleAppTests.swift in Sources */,
+				D1B02D9A212C99130028E764 /* RestInterfaceTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D1B02D7021296FA90028E764 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1B02D5921296FA70028E764 /* MoneyTapSampleApp */;
+			targetProxy = D1B02D6F21296FA90028E764 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D1B02D6121296FA70028E764 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1B02D6221296FA70028E764 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D1B02D6621296FA90028E764 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1B02D6721296FA90028E764 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1B02D7521296FA90028E764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D1B02D7621296FA90028E764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1B02D7821296FA90028E764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoneyTapSampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = learning.MoneyTapSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D1B02D7921296FA90028E764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoneyTapSampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = learning.MoneyTapSampleApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D1B02D7B21296FA90028E764 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoneyTapSampleAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = learning.MoneyTapSampleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyTapSampleApp.app/MoneyTapSampleApp";
+			};
+			name = Debug;
+		};
+		D1B02D7C21296FA90028E764 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MoneyTapSampleAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = learning.MoneyTapSampleAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MoneyTapSampleApp.app/MoneyTapSampleApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1B02D5521296FA60028E764 /* Build configuration list for PBXProject "MoneyTapSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1B02D7521296FA90028E764 /* Debug */,
+				D1B02D7621296FA90028E764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1B02D7721296FA90028E764 /* Build configuration list for PBXNativeTarget "MoneyTapSampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1B02D7821296FA90028E764 /* Debug */,
+				D1B02D7921296FA90028E764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1B02D7A21296FA90028E764 /* Build configuration list for PBXNativeTarget "MoneyTapSampleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1B02D7B21296FA90028E764 /* Debug */,
+				D1B02D7C21296FA90028E764 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1B02D5221296FA60028E764 /* Project object */;
+}
